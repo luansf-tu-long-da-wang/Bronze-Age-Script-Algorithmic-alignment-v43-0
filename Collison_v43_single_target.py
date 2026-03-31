@@ -212,5 +212,14 @@ def run_v43_logic(p_sumer, obi_dir):
     plt.show()
   #  turn off visuallization
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR_SUMERIAN = os.path.join(BASE_DIR, "sample_data_sumerian")
+DATA_DIR_OBI = os.path.join(BASE_DIR, "sample_data_obi")
+
+
 if __name__ == "__main__":
-    run_v43_logic("D:/Sumer_OBI/Sumer_glyphs/Sumerian_shang.png", "D:/Sumer_OBI/OBI_glyphs/")
+    # 动态拼接文件名，彻底取代 D 盘绝对路径
+    sumerian_target = os.path.join(DATA_DIR_SUMERIAN, "Sumerian_shang.png")
+    
+    # 传入相对路径变量
+    run_v43_logic(sumerian_target, DATA_DIR_OBI)
