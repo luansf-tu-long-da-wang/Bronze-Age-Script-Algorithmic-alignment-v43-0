@@ -1,6 +1,8 @@
 # Bronze-Age-Script-Algorithmic-alignment-v43-0
 Topological alignment algorithms for morphological analysis.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19347889.svg)](https://doi.org/10.5281/zenodo.19347889)
+
 ## Overview
 This repository contains the computational framework and quantitative methodology for **v43.0 Quantitative Graphemics**, an algorithmic tool designed to measure the topological isomorphism between isolated Early Bronze Age administrative logograms. 
 
