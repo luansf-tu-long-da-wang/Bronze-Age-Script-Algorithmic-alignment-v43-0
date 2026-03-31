@@ -19,7 +19,6 @@ To ensure maximum analytical rigor, the system was calibrated against a randomiz
 ## Purpose of this Repository
 This repository is maintained strictly for **peer-review transparency and reproducibility**. It provides the pseudocode, scoring matrices, and ablation study parameters referenced in upcoming academic publications. 
 
-Our statistical modeling demonstrates that prolonged multi-node alignment sequences (e.g., matching 5+ consecutive administrative titularies) yield coincidental probabilities approaching $10^{-60}$, mathematically neutralizing hypotheses of independent localized evolution.
 
 ## Data Availability
 The full dataset, including high-resolution vector alignments and the full N=100 control group matrices, is concurrently archived on Zenodo (DOI pending publication) for permanent open-access validation.
