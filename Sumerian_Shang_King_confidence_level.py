@@ -5,16 +5,17 @@ import math
 # ==========================================
 # 0. 核心配置
 # ==========================================
-# 获取当前 Python 脚本所在的绝对目录路径
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 使用 os.path.join 动态拼接相对路径
+# 假设数据文件都放在脚本同级目录下的 'Sumerian_Shang_King_Match' 文件夹中
+DATA_DIR = os.path.join(BASE_DIR, 'Sumerian_Shang_King_Match')
+
 FILE_MAP = {
-    'S1': os.path.join(BASE_DIR, 'SKL_Xie_score.csv'),
-    'S2': os.path.join(BASE_DIR, 'SKL Xie score Hai.csv'),
-    'S3': os.path.join(BASE_DIR, 'SKL Xie score Heng.csv'),
-    'S4': os.path.join(BASE_DIR, 'SKL Xie score Shang Jia.csv'),
-    'S5': os.path.join(BASE_DIR, 'SKL Xie score Bao Yi.csv')
+    'S1': os.path.join(DATA_DIR, 'SKL_Xie_score.csv'),
+    'S2': os.path.join(DATA_DIR, 'SKL Xie score Hai.csv'),
+    'S3': os.path.join(DATA_DIR, 'SKL Xie score Heng.csv'),
+    'S4': os.path.join(DATA_DIR, 'SKL Xie score Shang Jia.csv'),
+    'S5': os.path.join(DATA_DIR, 'SKL Xie score Bao Yi.csv')
 }
 def get_m(val):
     if val >= 1.0: return 100.0
