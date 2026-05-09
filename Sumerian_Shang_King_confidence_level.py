@@ -5,14 +5,17 @@ import math
 # ==========================================
 # 0. 核心配置
 # ==========================================
-FILE_MAP = {
-    'S1': r'D:\Sumer_OBI\Sumerian_Shang_King_Match\SKL_Xie_score.csv',
-    'S2': r'D:\Sumer_OBI\Sumerian_Shang_King_Match\SKL Xie score Hai.csv',
-    'S3': r'D:\Sumer_OBI\Sumerian_Shang_King_Match\SKL Xie score Heng.csv',
-    'S4': r'D:\Sumer_OBI\Sumerian_Shang_King_Match\SKL Xie score Shang Jia.csv',
-    'S5': r'D:\Sumer_OBI\Sumerian_Shang_King_Match\SKL Xie score Bao Yi.csv'
-}
+# 获取当前 Python 脚本所在的绝对目录路径
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# 使用 os.path.join 动态拼接相对路径
+FILE_MAP = {
+    'S1': os.path.join(BASE_DIR, 'SKL_Xie_score.csv'),
+    'S2': os.path.join(BASE_DIR, 'SKL Xie score Hai.csv'),
+    'S3': os.path.join(BASE_DIR, 'SKL Xie score Heng.csv'),
+    'S4': os.path.join(BASE_DIR, 'SKL Xie score Shang Jia.csv'),
+    'S5': os.path.join(BASE_DIR, 'SKL Xie score Bao Yi.csv')
+}
 def get_m(val):
     if val >= 1.0: return 100.0
     if val >= 0.5: return 10.0
